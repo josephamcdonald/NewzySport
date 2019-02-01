@@ -5,10 +5,10 @@
     <!-- Newzy queries. -->
     <string name="green_bay_football_query">\"Green Bay Packers\"</string>
     <string name="milwaukee_baseball_query">\"Milwaukee Brewers\"</string>
-    <string name="wisconsin_hockey_query">Wisconsin AND Badgers AND hockey</string>
-    <string name="wisconsin_football_query">Wisconsin AND Badgers AND football</string>
-    <string name="nz_cricket_query">\"New Zealand\" AND cricket</string>
-    <string name="nz_rugby_query">\"New Zealand\" AND rugby</string>
+    <string name="wisconsin_hockey_query">\"Wisconsin\"AND\"Badgers\"AND\"hockey\"</string>
+    <string name="wisconsin_football_query">\"Wisconsin\"AND\"Badgers\"AND\"football\"</string>
+    <string name="nz_cricket_query">\"New Zealand\"AND\"cricket\"</string>
+    <string name="nz_rugby_query">\"New Zealand\"AND\"rugby\"</string>
 
     <!-- Newzy destinations. -->
     <string name="green_bay_football">Green Bay Football</string>
