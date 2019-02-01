@@ -34,6 +34,9 @@ public class NewzySettings extends AppCompatActivity {
 
             Preference newzysToDate = findPreference(getString(R.string.settings_newzys_to_date_key));
             bindPreferenceSummaryToValue(newzysToDate);
+
+            Preference newzysCustomSearch = findPreference(getString(R.string.settings_custom_newzys_key));
+            bindPreferenceSummaryToValue(newzysCustomSearch);
         }
 
         @Override

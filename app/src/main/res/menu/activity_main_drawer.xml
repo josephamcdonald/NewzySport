@@ -28,6 +28,10 @@
             android:id="@+id/nav_nz_rugby"
             android:icon="@drawable/rugby"
             android:title="@string/nz_rugby" />
+        <item
+            android:id="@+id/nav_custom_newzys"
+            android:icon="@drawable/ic_search"
+            android:title="@string/custom_newzys" />
     </group>
 
     <group android:id="@+id/nav_admin">

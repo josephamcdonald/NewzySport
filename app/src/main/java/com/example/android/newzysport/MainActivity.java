@@ -1,7 +1,9 @@
 package com.example.android.newzysport;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentTransaction;
@@ -81,8 +83,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 // New Zealand Rugby Newzys.
                 newzysQuery = getString(R.string.nz_rugby_query);
                 break;
+
+            case R.id.nav_custom_newzys:
+                // Custom Newzys.
+                SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
+                newzysQuery = sp.getString(
+                        getString(R.string.settings_custom_newzys_key),
+                        getString(R.string.settings_custom_newzys_default));
+                break;
         }
-        // If destination chosen is NOT Settings.
+        // If destination chosen is Settings.
         if (item.getItemId() == R.id.nav_settings) {
 
             // Go to Newzy Settings.
@@ -120,7 +130,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public void onBackPressed() {
 
-        // If drawer is open, close it.
+        // If destination drawer is open, then close it.
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
 
