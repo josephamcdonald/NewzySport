@@ -17,7 +17,7 @@
     <string name="wisconsin_football">Wisconsin Football</string>
     <string name="nz_cricket">New Zealand Cricket</string>
     <string name="nz_rugby">New Zealand Rugby</string>
-    <string name="custom_newzys">Custom Newzys</string>
+    <string name="custom_search">Custom Search</string>
     <string name="settings">Settings</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -82,7 +82,7 @@
     <string name="provide_optional_to_date">Provide optional To date</string>
 
     <!-- Strings For Newzys Custom Search Preference [CHAR LIMIT=30] -->
-    <string name="settings_custom_newzys_label">Custom Newzys (optional)</string>
+    <string name="settings_custom_newzys_label">Custom Search (optional)</string>
     <string name="settings_custom_newzys_key" translatable="false">custom</string>
     <string name="settings_custom_newzys_default" translatable="false">@string/empty_string</string>
     <string name="provide_optional_custom_search">Provide optional custom search</string>
