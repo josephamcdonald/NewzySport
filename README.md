@@ -2,7 +2,7 @@
 
 ### Custom sport "Newzys!"
 
-Newzy Sport is based upon the Newsy News app!
+Newzy Sport is based upon the Newsy news app!
 
 ## Getting Started
 
@@ -36,7 +36,7 @@ N/A
 
 ## Extras
 
-**REST API**
+**REST**
 
 **JSON**
 
