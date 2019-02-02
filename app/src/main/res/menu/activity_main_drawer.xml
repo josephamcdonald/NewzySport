@@ -33,7 +33,7 @@
     <group android:id="@+id/nav_admin">
         <item
             android:id="@+id/nav_custom_newzys"
-            android:icon="@drawable/ic_search"
+            android:icon="@drawable/ic_action_search"
             android:title="@string/custom_search" />
         <item
             android:id="@+id/nav_settings"
