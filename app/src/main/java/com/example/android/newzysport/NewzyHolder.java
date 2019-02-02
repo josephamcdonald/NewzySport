@@ -3,7 +3,7 @@ package com.example.android.newzysport;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -45,7 +45,7 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
         newzyView.setOnClickListener(this);
     }
 
-    public void bindPartner(Newzy newzy) {
+    void bindPartner(Newzy newzy) {
 
         // Assign the current Newzy.
         currentNewzy = newzy;

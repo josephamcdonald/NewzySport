@@ -1,26 +1,26 @@
 package com.example.android.newzysport;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.List;
 
-public class NewzyAdapter extends RecyclerView.Adapter<NewzyHolder> {
+class NewzyAdapter extends RecyclerView.Adapter<NewzyHolder> {
 
     // Declare global variables.
     private final Context context;
     private final int itemResource;
     private final List<Newzy> newzys;
 
-    NewzyAdapter(Context context, int itemResource, List<Newzy> newzys) {
+    NewzyAdapter(Context context, List<Newzy> newzys) {
 
         // Assign global variables with input arguments.
         this.context = context;
-        this.itemResource = itemResource;
+        this.itemResource = R.layout.newzy_item;
         this.newzys = newzys;
     }
 
@@ -29,8 +29,7 @@ public class NewzyAdapter extends RecyclerView.Adapter<NewzyHolder> {
     public NewzyHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         // Inflate the item view and return the NewzyHolder.
-        View view = LayoutInflater.from(parent.getContext())
-                .inflate(this.itemResource, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(this.itemResource, parent, false);
 
         return new NewzyHolder(this.context, view);
     }

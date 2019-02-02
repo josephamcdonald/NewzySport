@@ -1,36 +1,36 @@
 package com.example.android.newzysport;
 
-public class Newzy {
+class Newzy {
 
     /**
      * Newzy section.
      */
-    private String newzySection;
+    private final String newzySection;
 
     /**
      * Newzy publication date.
      */
-    private String newzyDate;
+    private final String newzyDate;
 
     /**
      * Newzy title.
      */
-    private String newzyTitle;
+    private final String newzyTitle;
 
     /**
      * Newzy web URL.
      */
-    private String newzyUrl;
+    private final String newzyUrl;
 
     /**
      * Newzy author.
      */
-    private String newzyAuthor;
+    private final String newzyAuthor;
 
     /**
      * Newzy image URL.
      */
-    private String newzyImage;
+    private final String newzyImage;
 
     /**
      * Create a Newzy object without time.
