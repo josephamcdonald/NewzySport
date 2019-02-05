@@ -16,13 +16,13 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    // Declare Newzys queried.
+    // Declare Newzys query.
     public static String newzysQuery;
 
     // Declare Newzys Title.
     private String newzysTitle;
 
-    // Declare the navigation drawer;
+    // Declare the navigation drawer.
     private DrawerLayout drawer;
 
     @Override
