@@ -36,11 +36,11 @@ class Newzy {
      * Create a Newzy object without time.
      *
      * @param section newzy section.
-     * @param date newzy publication date.
-     * @param title newzy publication time.
-     * @param url newzy title.
-     * @param author newzy web URL.
-     * @param image newzy image URL.
+     * @param date    newzy publication date.
+     * @param title   newzy publication time.
+     * @param url     newzy title.
+     * @param author  newzy web URL.
+     * @param image   newzy image URL.
      */
     public Newzy(String section, String date, String title, String url, String author, String image) {
         newzySection = section;
@@ -54,42 +54,42 @@ class Newzy {
     /**
      * Get the Newzy section.
      */
-    public String getNewzySection() {
+    String getNewzySection() {
         return newzySection;
     }
 
     /**
      * Get the Newzy publication date.
      */
-    public String getNewzyDate() {
+    String getNewzyDate() {
         return newzyDate;
     }
 
     /**
      * Get the Newzy title.
      */
-    public String getNewzyTitle() {
+    String getNewzyTitle() {
         return newzyTitle;
     }
 
     /**
      * Get the Newzy web URL.
      */
-    public String getNewzyUrl() {
+    String getNewzyUrl() {
         return newzyUrl;
     }
 
     /**
      * Get the Newzy author.
      */
-    public String getNewzyAuthor() {
+    String getNewzyAuthor() {
         return newzyAuthor;
     }
 
     /**
      * Get the Newzy image URL.
      */
-    public String getNewzyImage() {
+    String getNewzyImage() {
         return newzyImage;
     }
 }
