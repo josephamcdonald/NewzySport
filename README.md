@@ -34,9 +34,9 @@ Joseph McDonald
 
 N/A
 
-## Extras
+## Features
 
-**REST**
+**REST/HTTP**
 
 **JSON**
 
