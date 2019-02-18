@@ -11,7 +11,7 @@
 
     <!-- List item dimensions. -->
     <dimen name="list_item_height">128dp</dimen>
-    <dimen name="card_view_standard">8dp</dimen>
+    <dimen name="card_view_standard">6dp</dimen>
 
     <!--Text in sp.-->
     <dimen name="text_large">20sp</dimen>
