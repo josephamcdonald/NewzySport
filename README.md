@@ -16,7 +16,7 @@ Obtain your API key from News API and reference it inside your global gradle.pro
 
 ## Built With
 
-Android Studio 3.3.1
+Android Studio 3.3.2
 
 Gradle 4.10.1
 
