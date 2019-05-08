@@ -16,9 +16,9 @@ Obtain your API key from News API and reference it inside your global gradle.pro
 
 ## Built With
 
-Android Studio 3.3.2
+Android Studio 3.4.0
 
-Gradle 4.10.1
+Gradle 5.5.1
 
 API Level: 21. Android 5.0 (LOLLIPOP)
 
