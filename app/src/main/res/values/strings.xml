@@ -22,7 +22,6 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="navigation_next">navigation next</string>
     <string name="item_image">item image</string>
     <string name="loading_newzy">Loading Newzy&#8230;</string>
     <string name="date_separator">T</string>

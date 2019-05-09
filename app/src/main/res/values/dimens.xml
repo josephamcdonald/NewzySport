@@ -5,7 +5,6 @@
     <dimen name="nav_header_height">192dp</dimen>
     <dimen name="margin_standard">16dp</dimen>
     <dimen name="margin_medium">12dp</dimen>
-    <dimen name="margin_small">8dp</dimen>
     <dimen name="padding_standard">16dp</dimen>
     <dimen name="progress_circle_dia">100dp</dimen>
     <dimen name="progress_icon_width">50dp</dimen>
