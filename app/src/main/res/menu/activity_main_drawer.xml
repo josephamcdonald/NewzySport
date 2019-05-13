@@ -3,38 +3,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+    <item android:title="@string/choose_your_sport">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_green_bay_football"
+                    android:icon="@drawable/football"
+                    android:title="@string/green_bay_football" />
+                <item
+                    android:id="@+id/nav_milwaukee_baseball"
+                    android:icon="@drawable/baseball"
+                    android:title="@string/milwaukee_baseball" />
+                <item
+                    android:id="@+id/nav_wisconsin_hockey"
+                    android:icon="@drawable/hockey"
+                    android:title="@string/wisconsin_hockey" />
+                <item
+                    android:id="@+id/nav_wisconsin_football"
+                    android:icon="@drawable/football"
+                    android:title="@string/wisconsin_football" />
+                <item
+                    android:id="@+id/nav_nz_cricket"
+                    android:icon="@drawable/cricket"
+                    android:title="@string/nz_cricket" />
+                <item
+                    android:id="@+id/nav_nz_rugby"
+                    android:icon="@drawable/rugby"
+                    android:title="@string/nz_rugby" />
+            </group>
+        </menu>
+    </item>
+
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_green_bay_football"
-            android:icon="@drawable/football"
-            android:title="@string/green_bay_football" />
-        <item
-            android:id="@+id/nav_milwaukee_baseball"
-            android:icon="@drawable/baseball"
-            android:title="@string/milwaukee_baseball" />
-        <item
-            android:id="@+id/nav_wisconsin_hockey"
-            android:icon="@drawable/hockey"
-            android:title="@string/wisconsin_hockey" />
-        <item
-            android:id="@+id/nav_wisconsin_football"
-            android:icon="@drawable/football"
-            android:title="@string/wisconsin_football" />
-        <item
-            android:id="@+id/nav_nz_cricket"
-            android:icon="@drawable/cricket"
-            android:title="@string/nz_cricket" />
-        <item
-            android:id="@+id/nav_nz_rugby"
-            android:icon="@drawable/rugby"
-            android:title="@string/nz_rugby" />
         <item
             android:id="@+id/nav_custom_newzys"
             android:icon="@drawable/ic_search"
             android:title="@string/custom_search" />
-    </group>
-
-    <group android:id="@+id/nav_admin">
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_settings"
