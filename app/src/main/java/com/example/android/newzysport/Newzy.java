@@ -42,7 +42,7 @@ class Newzy {
      * @param author  newzy web URL.
      * @param image   newzy image URL.
      */
-    public Newzy(String section, String date, String title, String url, String author, String image) {
+    Newzy(String section, String date, String title, String url, String author, String image) {
         newzySection = section;
         newzyDate = date;
         newzyTitle = title;
