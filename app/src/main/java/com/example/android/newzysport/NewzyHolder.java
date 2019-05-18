@@ -1,8 +1,9 @@
 package com.example.android.newzysport;
 
 import android.content.Context;
-import android.content.Intent;
 import android.net.Uri;
+
+import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
@@ -78,9 +79,15 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
         // Create the toast message and show it.
         Toast.makeText(context, context.getString(R.string.loading_newzy), Toast.LENGTH_SHORT).show();
 
-        // Create intent for the current newzy URL and start it.
-        Intent urlIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(currentNewzy.getNewzyUrl()));
-        context.startActivity(urlIntent);
+        // Use a CustomTabsIntent.Builder to configure CustomTabsIntent.
+        // Once ready, call CustomTabsIntent.Builder.build() to create a CustomTabsIntent
+        // and launch the current Newzy Url with CustomTabsIntent.launchUrl()
+
+        CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+        builder.setToolbarColor(context.getResources().getColor(R.color.colorPrimary));
+        builder.addDefaultShareMenuItem();
+        CustomTabsIntent customTabsIntent = builder.build();
+        customTabsIntent.launchUrl(context, Uri.parse(currentNewzy.getNewzyUrl()));
     }
 
     private String formatDate(String dateAndTime) {
