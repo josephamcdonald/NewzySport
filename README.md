@@ -58,6 +58,8 @@ N/A
 
 **Picasso**
 
+**CustomTabsIntent**
+
 **Google Play Typeface** - This is the only typeface used throughout the app.
 
 ## Acknowledgements
