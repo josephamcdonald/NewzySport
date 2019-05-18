@@ -58,7 +58,7 @@ N/A
 
 **Picasso**
 
-**Google Fira Sans Typeface** - This is the only typeface used throughout the app.
+**Google Play Typeface** - This is the only typeface used throughout the app.
 
 ## Acknowledgements
 
