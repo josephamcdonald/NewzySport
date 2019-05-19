@@ -1,10 +1,12 @@
 package com.example.android.newzysport;
 
 import android.content.Context;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 
 import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -67,7 +69,7 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
                     .centerCrop()
                     .error(R.drawable.newzy_packers)
                     .into(newzyImageView);
-            
+
         } else {
             newzyImageView.setImageResource(R.drawable.newzy_packers);
         }
@@ -80,13 +82,15 @@ public class NewzyHolder extends RecyclerView.ViewHolder implements View.OnClick
         Toast.makeText(context, context.getString(R.string.loading_newzy), Toast.LENGTH_SHORT).show();
 
         // Use a CustomTabsIntent.Builder to configure CustomTabsIntent.
-        // Once ready, call CustomTabsIntent.Builder.build() to create a CustomTabsIntent
-        // and launch the current Newzy Url with CustomTabsIntent.launchUrl()
-
-        CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
-        builder.setToolbarColor(context.getResources().getColor(R.color.colorPrimary));
-        builder.addDefaultShareMenuItem();
-        CustomTabsIntent customTabsIntent = builder.build();
+        // Once ready, create a CustomTabsIntent and launch the current
+        // Newzy Url with CustomTabsIntent.launchUrl()
+        CustomTabsIntent customTabsIntent = new CustomTabsIntent.Builder()
+                .setToolbarColor(context.getResources().getColor(R.color.colorPrimary))
+                .setCloseButtonIcon(BitmapFactory.decodeResource(
+                        context.getResources(), R.drawable.ic_arrow_back))
+                .setShowTitle(true)
+                .addDefaultShareMenuItem()
+                .build();
         customTabsIntent.launchUrl(context, Uri.parse(currentNewzy.getNewzyUrl()));
     }
 
