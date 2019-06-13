@@ -10,7 +10,7 @@
         <item name="cardViewStyle">@style/CardView.Light</item>
     </style>
 
-    <!-- Navigation drawer background. -->
+    <!-- Navigation header background. -->
     <style name="AppTheme.NavHeaderBackground">
         <item name="android:background">@color/colorPrimary</item>
     </style>

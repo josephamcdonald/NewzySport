@@ -3,7 +3,7 @@
 
     <item android:title="@string/choose_your_newzys">
         <menu>
-            <group android:checkableBehavior="single">
+            <group>
                 <item
                     android:id="@+id/nav_green_bay_football"
                     android:icon="@drawable/football"
@@ -32,7 +32,7 @@
         </menu>
     </item>
 
-    <group android:checkableBehavior="single">
+    <group>
         <item
             android:id="@+id/nav_custom_newzys"
             android:icon="@drawable/ic_search"
