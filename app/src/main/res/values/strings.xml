@@ -19,6 +19,7 @@
     <string name="nz_rugby">New Zealand Rugby</string>
     <string name="custom_newzys">Custom Newzys</string>
     <string name="settings">Settings</string>
+    <string name="powered_by_newsapi">Powered by NewsAPI</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -27,6 +28,7 @@
     <string name="date_separator">T</string>
     <string name="empty_string" />
     <string name="choose_your_newzys">Choose your Newzys!</string>
+    <string name="newsapi_org">https://newsapi.org</string>
 
     <!-- Empty list view notifications. -->
     <string name="no_internet">No internet available.\nPlease check connectivity and try again.</string>

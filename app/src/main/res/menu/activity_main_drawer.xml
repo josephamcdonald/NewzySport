@@ -39,4 +39,9 @@
         android:id="@+id/nav_settings"
         android:icon="@drawable/ic_settings"
         android:title="@string/settings" />
+
+    <item
+        android:id="@+id/nav_newsapi"
+        android:icon="@drawable/ic_info"
+        android:title="@string/powered_by_newsapi" />
 </menu>

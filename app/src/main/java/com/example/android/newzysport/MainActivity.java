@@ -2,6 +2,8 @@ package com.example.android.newzysport;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 
@@ -9,6 +11,8 @@ import androidx.annotation.NonNull;
 
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.browser.customtabs.CustomTabsIntent;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -95,24 +99,38 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         getString(R.string.settings_custom_newzys_key),
                         getString(R.string.settings_custom_newzys_default));
                 break;
+
+            case R.id.nav_settings:
+                // Go to Newzy Settings.
+                Intent settingsIntent = new Intent(this, NewzySettings.class);
+                startActivity(settingsIntent);
+                break;
+
+            case R.id.nav_newsapi:
+                // Use a CustomTabsIntent.Builder to configure CustomTabsIntent.
+                // Once ready, create a CustomTabsIntent and launch the NewsAPI.org Url with
+                // CustomTabsIntent.launchUrl()
+                CustomTabsIntent customTabsIntent = new CustomTabsIntent.Builder()
+                        .setToolbarColor(ContextCompat.getColor(this, R.color.colorPrimary))
+                        .setCloseButtonIcon(BitmapFactory.decodeResource(
+                                getResources(), R.drawable.ic_arrow_back))
+                        .setShowTitle(true)
+                        .addDefaultShareMenuItem()
+                        .build();
+                customTabsIntent.launchUrl(this, Uri.parse(getString(R.string.newsapi_org)));
+                break;
         }
-        // If destination chosen is Settings.
-        if (item.getItemId() == R.id.nav_settings) {
 
-            // Go to Newzy Settings.
-            Intent settingsIntent = new Intent(this, NewzySettings.class);
-            startActivity(settingsIntent);
+        if (item.getItemId() != R.id.nav_settings && item.getItemId() != R.id.nav_newsapi) {
 
-        } else {
-            // Set Newzys Title based on selected destination.
+            // Assign the destination title.
             newzysTitle = item.getTitle().toString();
-
             // Launch Fragment based on selected destination.
             launchNewzyFragment();
         }
+
         // Close the drawer after selecting a destination.
         drawer.closeDrawer(GravityCompat.START);
-
         return true;
     }
 
