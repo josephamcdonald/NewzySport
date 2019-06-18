@@ -86,4 +86,10 @@
     <string name="settings_custom_newzys_key" translatable="false">custom</string>
     <string name="settings_custom_newzys_default" translatable="false">@string/empty_string</string>
     <string name="provide_optional_custom_search">Provide optional custom search</string>
+
+    <!-- Strings For API Key Preference [CHAR LIMIT=30] -->
+    <string name="settings_api_key_label">API Key:</string>
+    <string name="settings_api_key_key" translatable="false">api-key</string>
+    <string name="settings_api_key_default" translatable="false">@string/empty_string</string>
+    <string name="provide_api_key">Provide API Key</string>
 </resources>
