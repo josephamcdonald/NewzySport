@@ -2,11 +2,11 @@
 
 ### Custom sport "Newzys!"
 
-Newzy Sport is based upon the Newsy news app!
+Newzy Sport is based upon the Newsy app!
 
 ## Getting Started
 
-Obtain your API key from News API and reference it inside your global gradle.properties file. i.e. apiKeyNewsAPI="your api key here"
+Obtain your API key from News API and provide it in the app settings.
 
 (https://newsapi.org/register)
 
