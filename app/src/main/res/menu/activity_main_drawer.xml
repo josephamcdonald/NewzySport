@@ -43,5 +43,5 @@
     <item
         android:id="@+id/nav_newsapi"
         android:icon="@drawable/ic_info"
-        android:title="@string/powered_by_newsapi" />
+        android:title="@string/powered_by_news_api" />
 </menu>
