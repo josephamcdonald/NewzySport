@@ -141,11 +141,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             // Set the default title and query.
             newzysQuery = getString(R.string.green_bay_football_query);
-            setTitle(R.string.green_bay_football);
-
-        } else {
-            setTitle(newzysTitle);
+            newzysTitle = getString(R.string.green_bay_football);
         }
+
+        // Assign the destination title.
+        setTitle(newzysTitle);
 
         // Go to the NewzyFragment with the selected destination.
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
