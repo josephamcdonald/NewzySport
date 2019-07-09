@@ -27,11 +27,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     // Declare Newzys query.
     public static String newzysQuery;
 
-    // Declare the navigation drawer.
-    private DrawerLayout drawer;
-
     // Declare the Newzys title.
     public static String newzysTitle;
+
+    // Declare the navigation drawer.
+    private DrawerLayout drawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -125,7 +125,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             // Assign the destination title.
             newzysTitle = item.getTitle().toString();
-            setTitle(newzysTitle);
 
             // Launch Fragment based on selected destination.
             launchNewzyFragment();
