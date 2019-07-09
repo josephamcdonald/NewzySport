@@ -27,9 +27,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     // Declare Newzys query.
     public static String newzysQuery;
 
-    // Declare Newzys Title.
-    private String newzysTitle;
-
     // Declare the navigation drawer.
     private DrawerLayout drawer;
 
@@ -52,6 +49,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Find and setup NavigationView and its Listener.
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        // Set default query and title.
+        newzysQuery = getString(R.string.green_bay_football_query);
+        setTitle(getString(R.string.green_bay_football));
 
         // Launch default Newzy Fragment.
         launchNewzyFragment();
@@ -124,7 +125,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (item.getItemId() != R.id.nav_settings && item.getItemId() != R.id.nav_newsapi) {
 
             // Assign the destination title.
-            newzysTitle = item.getTitle().toString();
+            setTitle(item.getTitle().toString());
+
             // Launch Fragment based on selected destination.
             launchNewzyFragment();
         }
@@ -135,14 +137,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void launchNewzyFragment() {
-
-        if (newzysTitle == null) {
-            newzysQuery = getString(R.string.green_bay_football_query);
-            setTitle(getString(R.string.green_bay_football));
-
-        } else {
-            setTitle(newzysTitle);
-        }
 
         // Go to the NewzyFragment with the selected destination.
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
